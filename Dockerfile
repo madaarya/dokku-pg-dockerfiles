@@ -1,7 +1,10 @@
 # forked from https://gist.github.com/jpetazzo/5494158
 
 FROM	ubuntu:trusty
-MAINTAINER	kload "kload@kload.fr"
+MAINTAINER	Mada "me@madaarya.com"
+
+# add Indonesia mirror
+RUN echo "deb http://kambing.ui.ac.id/ubuntu trusty main universe" > /etc/apt/sources.list
 
 # prevent apt from starting postgres right after the installation
 RUN	echo "#!/bin/sh\nexit 101" > /usr/sbin/policy-rc.d; chmod +x /usr/sbin/policy-rc.d
