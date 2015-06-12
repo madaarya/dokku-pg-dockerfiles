@@ -1,7 +1,7 @@
 # forked from https://gist.github.com/jpetazzo/5494158
 
 FROM	ubuntu:trusty
-MAINTAINER	Mada "me@madaarya.com"
+MAINTAINER	Mada Aryakusumah "mada@41studio.com"
 
 # add Indonesia mirror
 RUN echo "deb http://kambing.ui.ac.id/ubuntu trusty main universe" > /etc/apt/sources.list
